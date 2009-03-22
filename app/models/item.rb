@@ -21,6 +21,8 @@ class Item < ActiveRecord::Base
   
   has_price :retail_price
   
+  can_query
+  
   def to_s
     "#{sku}"
   end
