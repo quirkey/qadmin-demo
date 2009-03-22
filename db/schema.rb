@@ -9,7 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090322212453) do
+ActiveRecord::Schema.define(:version => 20090322220327) do
+
+  create_table "items", :force => true do |t|
+    t.string   "sku"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "retail_price_cents"
+    t.boolean  "active",             :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "items", ["active"], :name => "index_items_on_active"
+  add_index "items", ["sku"], :name => "index_items_on_sku", :unique => true
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
