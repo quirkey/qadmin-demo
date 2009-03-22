@@ -1,0 +1,7 @@
+== qadmin-demo
+
+qadmin-demo is an example rails app that showcases the power of the qadmin gem.
+
+For more information about qadmin:
+
+http://code.quirkey.com/qadmin
