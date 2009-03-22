@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/halpers"]
 	path = vendor/plugins/halpers
 	url = git://github.com/quirkey/halpers.git
+[submodule "vendor/plugins/qcontent"]
+	path = vendor/plugins/qcontent
+	url = git://github.com/quirkey/qcontent.git
