@@ -45,7 +45,7 @@ class User < ActiveRecord::Base
   validates_length_of       :last_name,   :maximum => 100, :allow_nil => true
   
 
-  
+  can_query
 
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
