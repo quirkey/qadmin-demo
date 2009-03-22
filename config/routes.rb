@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.with_options :path_prefix => 'admin' do |admin|
     admin.resources :users
+    admin.resources :items
   end
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'

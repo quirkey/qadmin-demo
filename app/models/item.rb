@@ -21,6 +21,10 @@ class Item < ActiveRecord::Base
   
   has_price :retail_price
   
+  def to_s
+    "#{sku}"
+  end
+  
   def self.active_conditions
     {:active => true}
   end

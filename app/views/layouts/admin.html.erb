@@ -20,7 +20,7 @@
 		<div id="left_menu">
 			<h3>Panels</h3>
 			<ul class="menu">
-				<% simple_menu('users') do |name,controller| %>
+				<% simple_menu('users','items') do |name,controller| %>
 				<li><%= link_to(name.titleize, {:controller => controller, :action => 'index'}, :class => (like_current_page?(:controller => controller) ? 'selected' : '')) %></li>
 				<% end %>
 			</ul>
