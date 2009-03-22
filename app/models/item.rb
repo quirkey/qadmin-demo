@@ -13,4 +13,15 @@
 #
 
 class Item < ActiveRecord::Base
+  include Qcontent::Published
+  include Qcontent::Pricing
+  
+  validates_presence_of :sku
+  validates_uniqueness_of :sku
+  
+  has_price :retail_price
+  
+  def self.active_conditions
+    {:active => true}
+  end
 end
