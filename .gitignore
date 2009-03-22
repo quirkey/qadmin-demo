@@ -9,3 +9,4 @@ public/assets*
 public/test_assets*
 *.tmproj
 db/sphinx
+db/*.sqlite3

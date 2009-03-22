@@ -1,4 +1,4 @@
-namespace :qadmin-demo do
+namespace :qadmin_demo do
   task :load_env => [:environment]
   
   namespace :clean do
