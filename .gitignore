@@ -1,0 +1,11 @@
+tmp/*
+log/*
+db/latest*
+.DS_Store
+vendor/rails*
+vendor/gems*
+*.svn*
+public/assets*
+public/test_assets*
+*.tmproj
+db/sphinx

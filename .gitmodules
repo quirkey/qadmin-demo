@@ -1,0 +1,12 @@
+[submodule "vendor/plugins/restful_authentication"]
+	path = vendor/plugins/restful_authentication
+	url = git://github.com/quirkey/restful-authentication.git
+[submodule "vendor/plugins/flashdance"]
+	path = vendor/plugins/flashdance
+	url = git://github.com/quirkey/flashdance.git
+[submodule "vendor/plugins/shoulda"]
+	path = vendor/plugins/shoulda
+	url = git://github.com/thoughtbot/shoulda.git
+[submodule "vendor/plugins/halpers"]
+	path = vendor/plugins/halpers
+	url = git://github.com/quirkey/halpers.git
